@@ -6,11 +6,16 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function(event) {
-            var links = document.querySelectorAll('a');
-        }
+            
+            var url = new URL(window.location);
+            var linkingUri = url.searchParams.linkingUri;
+
+            document.querySelector('#go-to-app').setAttribute('href', linkingUri);
+
+        });
     </script>
 </head>
 <body>
-<a href="">Voltar para o aplicativo</a>
+<a href="" id="go-to-app">Voltar para o aplicativo</a>
 </body>
 </html>
