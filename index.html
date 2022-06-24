@@ -8,7 +8,7 @@
         document.addEventListener("DOMContentLoaded", function(event) {
             
             var url = new URL(window.location);
-            var linkingUri = url.searchParams.linkingUri;
+            var linkingUri = url.searchParams.get('linkingUri');
 
             document.querySelector('#go-to-app').setAttribute('href', linkingUri);
 
