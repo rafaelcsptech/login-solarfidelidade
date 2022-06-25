@@ -12,7 +12,7 @@
             var token = url.searchParams.get('token');
 
             var urlRedirect = new URL(linkingUri);
-            urlRedirect.searchParams.set('token', 'dsadsfdasfdafdsfdsafsd');
+            urlRedirect.searchParams.set('token', token);
 
             document.querySelector('#go-to-app').setAttribute('href', urlRedirect);
 
