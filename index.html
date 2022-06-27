@@ -14,7 +14,7 @@
             var urlRedirect = new URL(linkingUri);
             urlRedirect.searchParams.set('token', 'token-qualquer');
 
-            location.href = urlRedirect
+            document.querySelector('#go-to-app').setAttribute('href', urlRedirect);
 
         });
     </script>
