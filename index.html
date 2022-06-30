@@ -11,8 +11,8 @@
             var linkingUri = url.searchParams.get('linkingUri');
             var token = url.searchParams.get('token');
 
-            var urlRedirect = new URL(linkingUri);
-            urlRedirect.searchParams.set('token', 'token-qualquer');
+            var urlRedirect = new URL('solarfidelidade://');
+            urlRedirect.searchParams.set('token', 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlZ0M1JhRkpSdnRsbUNOSUNfUnFuX3EyLURwVVpJSnQzNlZrUjhpNWhIb28ifQ.eyJleHAiOjE2NTY2MjgzMDIsIm5iZiI6MTY1NjYyNDcwMiwidmVyIjoiMS4wIiwiaXNzIjoiaHR0cHM6Ly9hcGlhY2Vzc28uYjJjbG9naW4uY29tLzRlMGJjNWMwLTE2NGMtNGUyNS1hYmVhLTZmMzk0ZGUxZmFhZS92Mi4wLyIsInN1YiI6ImY4MjYzMTM5LTQ5ZGUtNDE4YS04ODVkLWEyMzA0ZWNlNGY0ZCIsImF1ZCI6IjlhYmQ0OGY1LTRiNDYtNGI5YS05OGU0LTQ1ZWUyMjc4NjE5ZiIsImFjciI6ImIyY18xYV9sb2dpbmNhZGFzdHJvIiwibm9uY2UiOiJkZWZhdWx0Tm9uY2UiLCJpYXQiOjE2NTY2MjQ3MDIsImF1dGhfdGltZSI6MTY1NjYyNDcwMiwiZXh0ZW5zaW9uX2NwZiI6IjYyMzA3MjkxMDU5IiwiZXh0ZW5zaW9uX1RlbGVmb25lIjoiKDIxKTk5ODU5OTA5MCIsInNpZ25Jbk5hbWVzLmVtYWlsQWRkcmVzcyI6InJvZHJpZ28udG9ycmVzaUBpbXBhci5jb20uYnIiLCJnaXZlbl9uYW1lIjoicm9kcmlnbyIsImZhbWlseV9uYW1lIjoidG9ycmVzaSIsImluZFBlcm1pc3NhbyI6ImZhbHNlIiwibmV3VXNlciI6ZmFsc2UsImlzRm9yZ290UGFzc3dvcmQiOmZhbHNlLCJ0aWQiOiI0ZTBiYzVjMC0xNjRjLTRlMjUtYWJlYS02ZjM5NGRlMWZhYWUifQ.AdfIxVaiJNV5LsJSil_kOu3Jy2eniMIuJVIyEPFRYuFX_ndG9jJTAx7KOngpZ2SvXrjfXoQfq3hv90ifP3MfpOsG-nvc36aObnVvCVEJXcBMJII7DKLe3T1RjW4dPEiohPNg2-BBxi-nVJ7FKj4Q3SEZkYKA2Mdj3fF6whg1f_s022e2BpRuiDSN4GDn9E5XxQnRveWdlhnkombs9W7rA4rhQDh6JmrUO2jZ1vIVnjwkyCva1ASUL7dMvZTEO0Pd9T8c4VNADKnetwG6RQyeJMbvdhFwXUKANrNpg1OlT7RvIO2JM4avgvfedw21-YOqE0jdQQObLQjLiXpGs4BUDw');
 
             document.querySelector('#go-to-app').setAttribute('href', urlRedirect);
 
